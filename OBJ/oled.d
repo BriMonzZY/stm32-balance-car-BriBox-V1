@@ -44,3 +44,4 @@
 ..\obj\oled.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\oled.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\oled.o: ..\HARDWARE\OLED\oledfont.h
+..\obj\oled.o: ..\HARDWARE\OLED\bmp.h
