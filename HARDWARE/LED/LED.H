@@ -3,7 +3,7 @@
 #include "sys.h"
 
 //LED 端口定义
-#define LED PCout(15) // PC14
+#define LED PCout(15) // PC15
 void LED_Init(void);  //初始化
 void Led_Flash(u16 time);
 

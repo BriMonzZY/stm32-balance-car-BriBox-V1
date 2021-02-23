@@ -1,4 +1,3 @@
-
 #include "sys.h"
 
 int main(void)	
@@ -13,7 +12,7 @@ int main(void)
   while(1)	
 	{
 			delay_ms(50);				 			 					//=====50ms刷新一次屏幕即可,不需要一直刷新。
-			OLED_ShowString(0,1,"DAYUTC OLED Test",14);
+			OLED_ShowString(0,4,"DAYUTC OLED Test",14);
 	} 	
 }
 
