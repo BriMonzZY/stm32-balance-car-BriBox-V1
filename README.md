@@ -10,7 +10,7 @@
 
 OLED模块：PB8：SCL		PB9：SDA
 
-蓝牙：PB10		PB11
+蓝牙串口uart3：PB10：TXD		PB11：RXD
 
 电机驱动：
 

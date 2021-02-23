@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_ HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HARDWARE\OLED;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\MPU6050;..\HARDWARE\MPU6050\EMPL</IncludePath>
+              <IncludePath>..\HARDWARE\OLED;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\MPU6050;..\HARDWARE\MPU6050\EMPL;..\HARDWARE\USART3;..\HARDWARE\TIMER</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -461,6 +461,11 @@
               <FileName>inv_mpu_dmp_motion_driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\USART3\usart3.c</FilePath>
             </File>
           </Files>
         </Group>

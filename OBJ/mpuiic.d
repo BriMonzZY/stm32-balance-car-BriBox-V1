@@ -37,9 +37,15 @@
 ..\obj\mpuiic.o: ..\SYSTEM\sys\sys.h
 ..\obj\mpuiic.o: ..\SYSTEM\usart\usart.h
 ..\obj\mpuiic.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mpuiic.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\mpuiic.o: ..\HARDWARE\LED\led.h
 ..\obj\mpuiic.o: ..\HARDWARE\OLED\oled.h
 ..\obj\mpuiic.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\mpuiic.o: ..\HARDWARE\KEY\key.h
+..\obj\mpuiic.o: ..\HARDWARE\TIMER\timer.h
+..\obj\mpuiic.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\mpuiic.o: ..\HARDWARE\MPU6050\mpuiic.h
+..\obj\mpuiic.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
+..\obj\mpuiic.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\mpuiic.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\mpuiic.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

@@ -37,9 +37,15 @@
 ..\obj\timer.o: ..\SYSTEM\sys\sys.h
 ..\obj\timer.o: ..\SYSTEM\usart\usart.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\timer.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\timer.o: ..\HARDWARE\LED\led.h
 ..\obj\timer.o: ..\HARDWARE\OLED\oled.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\timer.o: ..\HARDWARE\KEY\key.h
+..\obj\timer.o: ..\HARDWARE\TIMER\timer.h
+..\obj\timer.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\timer.o: ..\HARDWARE\MPU6050\mpuiic.h
+..\obj\timer.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
+..\obj\timer.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

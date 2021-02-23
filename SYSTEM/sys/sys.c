@@ -1,8 +1,5 @@
 #include "sys.h" 
- /**************************************************************************
- 作  者 ：大鱼电子
-淘宝地址：https://shop119207236.taobao.com
-**************************************************************************/
+
 //设置NVIC 
 //NVIC_PreemptionPriority:抢占优先级
 //NVIC_SubPriority       :响应优先级
@@ -50,10 +47,10 @@ void NVIC_Configuration(void)
 //		NVIC_Init(&NVIC_InitStructure);														//根据NVIC_InitStruct中指定的参数初始化外设NVIC寄存器USART1
 
 //		//////////////////Usart3 NVIC 中断优先级配置也就是蓝牙串口配置//////////////////
-//		NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
-//		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0x02 ;//抢占优先级2
-//		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;		//子优先级2
-//		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
-//		NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器
+		NVIC_InitStructure.NVIC_IRQChannel = USART3_IRQn;
+		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0x02 ;//抢占优先级2
+		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x02;		//子优先级2
+		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
+		NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器
 		 
 }

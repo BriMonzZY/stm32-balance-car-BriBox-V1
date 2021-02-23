@@ -43,6 +43,10 @@
 ..\obj\inv_mpu.o: ..\SYSTEM\delay\delay.h
 ..\obj\inv_mpu.o: ..\SYSTEM\sys\sys.h
 ..\obj\inv_mpu.o: ..\SYSTEM\usart\usart.h
+..\obj\inv_mpu.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\inv_mpu.o: ..\HARDWARE\LED\led.h
 ..\obj\inv_mpu.o: ..\HARDWARE\OLED\oled.h
 ..\obj\inv_mpu.o: ..\HARDWARE\KEY\key.h
+..\obj\inv_mpu.o: ..\HARDWARE\TIMER\timer.h
+..\obj\inv_mpu.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\inv_mpu.o: ..\HARDWARE\MPU6050\mpuiic.h

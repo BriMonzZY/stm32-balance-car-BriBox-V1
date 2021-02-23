@@ -4,9 +4,15 @@
 #include "stm32f10x.h"
 #include "delay.h"
 #include "usart.h"
+#include "usart3.h"
 #include "led.h"
 #include "oled.h"
 #include "key.h"
+#include "timer.h"
+#include "mpu6050.h"
+#include "mpuiic.h"
+#include "inv_mpu_dmp_motion_driver.h"
+#include "inv_mpu.h"
 ////////////////////////////////////////////////////////////////////////////
 #include <string.h> 
 #include <stdio.h>
@@ -79,17 +85,8 @@
 #define SWD_ENABLE         0X01
 #define JTAG_SWD_ENABLE    0X00	
 
+extern u8 recieve_bluetooth_DATA;			 //	蓝牙接受数据标志
+
 void NVIC_Configuration(void);//中断优先级设置	 
 
 #endif
-
-
-
-
-
-
-
-
-
-
-

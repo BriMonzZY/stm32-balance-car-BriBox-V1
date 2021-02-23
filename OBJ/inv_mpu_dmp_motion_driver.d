@@ -44,6 +44,10 @@
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\SYSTEM\delay\delay.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\SYSTEM\sys\sys.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\SYSTEM\usart\usart.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\LED\led.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\OLED\oled.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\KEY\key.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\TIMER\timer.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\MPU6050\mpuiic.h
