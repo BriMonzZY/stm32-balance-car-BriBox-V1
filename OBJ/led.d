@@ -53,5 +53,6 @@
 ..\obj\led.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\led.o: ..\HARDWARE\control\control.h
 ..\obj\led.o: ..\HARDWARE\PWM\pwm.h
+..\obj\led.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

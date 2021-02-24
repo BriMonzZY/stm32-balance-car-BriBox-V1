@@ -106,8 +106,8 @@
     <MDIClientArea>
       <RegID>0</RegID>
       <MDITabState>
-        <Len>595</Len>
-        <Data>0100000004000000010000000100000001000000010000000000000002000000000000000100000001000000000000002800000028000000010000000600000003000000010000002C443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C50574D5C70776D2E63000000000570776D2E6300000000C5D4F200FFFFFFFF30443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4D4F544F525C6D6F746F722E6300000000076D6F746F722E6300000000FFDC7800FFFFFFFF34443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C636F6E74726F6C5C636F6E74726F6C2E630000000009636F6E74726F6C2E6300000000BECEA100FFFFFFFF2E443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4F4C45445C6F6C65642E6300000000066F6C65642E6300000000F0A0A100FFFFFFFF25443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C555345525C6D61696E2E6300000000066D61696E2E6300000000BCA8E100FFFFFFFF30443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4D4F544F525C6D6F746F722E6800000000076D6F746F722E6800000000F7B88600FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000000000002000000CB000000660000000006000070020000</Data>
+        <Len>902</Len>
+        <Data>0100000004000000010000000100000001000000010000000000000002000000000000000100000001000000000000002800000028000000010000000A000000030000000100000034443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C636F6E74726F6C5C636F6E74726F6C2E630000000009636F6E74726F6C2E6300000000C5D4F200FFFFFFFF2E443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C455854495C657874692E630000000006657874692E6300000000FFDC7800FFFFFFFF2A443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C53595354454D5C7379735C7379732E6300000000057379732E6300000000BECEA100FFFFFFFF25443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C555345525C6D61696E2E6300000000066D61696E2E6300000000F0A0A100FFFFFFFF34443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C636F6E74726F6C5C636F6E74726F6C2E680000000009636F6E74726F6C2E6800000000BCA8E100FFFFFFFF2E443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C455854495C657874692E680000000006657874692E68000000009CC1B600FFFFFFFF32443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4843535230345C6863737230342E6300000000086863737230342E6300000000F7B88600FFFFFFFF34443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4843535230345C6863737230345F322E63000000000A6863737230345F322E6300000000D9ADC200FFFFFFFF34443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4843535230345C6863737230345F322E68000000000A6863737230345F322E6800000000A5C2D700FFFFFFFF2E443A5C53544D33325C70726F6A6563745CC6BDBAE2B3B556315C48415244574152455C4F4C45445C6F6C65642E6300000000066F6C65642E6300000000B3A6BE00FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000000000002000000CB000000660000000006000070020000</Data>
       </MDITabState>
     </MDIClientArea>
     <ViewEx>
@@ -1860,55 +1860,91 @@
       <Size>100</Size>
       <ActiveTab>3</ActiveTab>
       <Doc>
-        <Name>..\HARDWARE\PWM\pwm.c</Name>
-        <ColumnNumber>11</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>7</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>..\HARDWARE\MOTOR\motor.c</Name>
-        <ColumnNumber>22</ColumnNumber>
-        <TopLine>46</TopLine>
-        <CurrentLine>67</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
         <Name>..\HARDWARE\control\control.c</Name>
-        <ColumnNumber>22</ColumnNumber>
-        <TopLine>70</TopLine>
-        <CurrentLine>12</CurrentLine>
+        <ColumnNumber>5</ColumnNumber>
+        <TopLine>21</TopLine>
+        <CurrentLine>41</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\HARDWARE\OLED\oled.c</Name>
-        <ColumnNumber>23</ColumnNumber>
-        <TopLine>547</TopLine>
-        <CurrentLine>565</CurrentLine>
+        <Name>..\HARDWARE\EXTI\exti.c</Name>
+        <ColumnNumber>27</ColumnNumber>
+        <TopLine>16</TopLine>
+        <CurrentLine>32</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\SYSTEM\sys\sys.c</Name>
+        <ColumnNumber>13</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>1</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
         <Name>.\main.c</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>7</TopLine>
-        <CurrentLine>14</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders>58</ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>..\HARDWARE\MOTOR\motor.h</Name>
         <ColumnNumber>20</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>12</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders>59</ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\HARDWARE\control\control.h</Name>
+        <ColumnNumber>13</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>16</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\HARDWARE\EXTI\exti.h</Name>
+        <ColumnNumber>20</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>5</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>D:\STM32\project\平衡车V1\HARDWARE\HCSR04\hcsr04.c</Name>
+        <ColumnNumber>23</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>15</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\HARDWARE\HCSR04\hcsr04_2.c</Name>
+        <ColumnNumber>34</ColumnNumber>
+        <TopLine>32</TopLine>
+        <CurrentLine>68</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>D:\STM32\project\平衡车V1\HARDWARE\HCSR04\hcsr04_2.h</Name>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>6</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>..\HARDWARE\OLED\oled.c</Name>
+        <ColumnNumber>44</ColumnNumber>
+        <TopLine>552</TopLine>
+        <CurrentLine>569</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -1917,7 +1953,7 @@
   </MDIGroups>
 
   <Bookmarks>
-    <ListItem>..\HARDWARE\EXTI\exti.c 27</ListItem>
+    <ListItem>..\HARDWARE\EXTI\exti.c 32</ListItem>
   </Bookmarks>
 
 </ProjectGui>

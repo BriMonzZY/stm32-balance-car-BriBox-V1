@@ -54,5 +54,6 @@
 ..\obj\stm32f10x_it.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\control\control.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\PWM\pwm.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

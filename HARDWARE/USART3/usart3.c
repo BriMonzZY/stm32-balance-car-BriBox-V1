@@ -64,16 +64,17 @@ void USART3_IRQHandler(void)
 	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET) //接收到数据
 	{	  
 		static	uint16_t uart_receive = 0;//蓝牙接收相关变量
+		
 		uart_receive = USART_ReceiveData(USART3); 
-		if(uart_receive==0x00)						recieve_bluetooth_DATA=9;
-			else if(uart_receive==0x01)			recieve_bluetooth_DATA=1;
-			else if(uart_receive==0x02)			recieve_bluetooth_DATA=2;
-			else if(uart_receive==0x03)			recieve_bluetooth_DATA=3;
-			else if(uart_receive==0x04)			recieve_bluetooth_DATA=4;
-			else if(uart_receive==0x05)			recieve_bluetooth_DATA=5;										
-			else if(uart_receive==0x06)	  	recieve_bluetooth_DATA=6;
-			else if(uart_receive==0x07)			recieve_bluetooth_DATA=7;
-			else if(uart_receive==0x08)	  	recieve_bluetooth_DATA=8;
+		if     (uart_receive==0x00)			balance_UP_KP += 0.1;
+		else if(uart_receive==0x01)			balance_UP_KD += 0.1;
+		else if(uart_receive==0x02)			recieve_bluetooth_DATA=2;
+		else if(uart_receive==0x03)			balance_UP_KP -= 0.1;
+		else if(uart_receive==0x04)			balance_UP_KD -= 0.1;
+		else if(uart_receive==0x05)			recieve_bluetooth_DATA=5;										
+		else if(uart_receive==0x06)	  	recieve_bluetooth_DATA=6;
+		else if(uart_receive==0x07)			recieve_bluetooth_DATA=7;
+		else if(uart_receive==0x08)	  	recieve_bluetooth_DATA=8;
 		
 		USART_SendData(USART3, recieve_bluetooth_DATA);
 	}  											 

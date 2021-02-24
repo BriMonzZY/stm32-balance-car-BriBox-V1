@@ -53,5 +53,6 @@
 ..\obj\timer.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\timer.o: ..\HARDWARE\control\control.h
 ..\obj\timer.o: ..\HARDWARE\PWM\pwm.h
+..\obj\timer.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\timer.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

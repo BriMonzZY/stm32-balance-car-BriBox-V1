@@ -19,6 +19,7 @@
 #include "motor.h"
 #include "control.h"
 #include "pwm.h"
+#include "hcsr04_2.h"
 ////////////////////////////////////////////////////////////////////////////
 #include <string.h> 
 #include <stdio.h>

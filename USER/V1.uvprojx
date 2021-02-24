@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -468,11 +468,6 @@
               <FilePath>..\HARDWARE\USART3\usart3.c</FilePath>
             </File>
             <File>
-              <FileName>hcsr04.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\HCSR04\hcsr04.c</FilePath>
-            </File>
-            <File>
               <FileName>encoder.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\ENCODER\encoder.c</FilePath>
@@ -496,6 +491,11 @@
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\MOTOR\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>hcsr04_2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\HCSR04\hcsr04_2.c</FilePath>
             </File>
           </Files>
         </Group>

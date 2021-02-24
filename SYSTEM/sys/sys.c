@@ -19,11 +19,11 @@ void NVIC_Configuration(void)
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	//设置NVIC中断分组2:2位抢占优先级，2位响应优先级
 
 //		//////////////////外部中断5优先级配置也就是MPU6050 INT引脚的配置///////////因为是控制中断，故此优先级应是最高。
-		NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;				//使能外部中断通道
-		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;	//抢占优先级0， 
-		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;					//子优先级1
-		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;								//使能外部中断通道
-		NVIC_Init(&NVIC_InitStructure); 
+//		NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;				//使能外部中断通道
+//		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;	//抢占优先级0， 
+//		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x01;					//子优先级1
+//		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;								//使能外部中断通道
+//		NVIC_Init(&NVIC_InitStructure); 
 //	
 //		//////////////////定时器3中断优先级配置也就是超声波计时的定时器的配置//////////////////		
 		NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;  //TIM3中断

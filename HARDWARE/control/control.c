@@ -9,13 +9,13 @@
 **************************************************************************/
 int Balance_Pwm,Velocity_Pwm,Turn_Pwm;
 
-float Mechanical_angle=0; 
+float Mechanical_angle = 0; 
 
-float balance_UP_KP=300; 	 // 小车直立环PD参数
-float balance_UP_KD=1.9;
+float balance_UP_KP = 300; 	 // 小车直立环PD参数
+float balance_UP_KD = 0.48;
 
-float velocity_KP=90;     // 小车速度环PI参数
-float velocity_KI=0.45;
+float velocity_KP = 90;     // 小车速度环PI参数
+float velocity_KI = 0.45;
 
 u8 UltrasonicWave_Voltage_Counter=0;  // 时间片轮询计数位
 
@@ -36,14 +36,15 @@ void EXTI9_5_IRQHandler(void)
 		{
 			UltrasonicWave_Voltage_Counter=0;
 			// Voltage=Get_battery_volt();		                         //===读取电池电压		
-			recive_distance = Hcsr04GetLength();												 //===读取超声波的值
+			UltrasonicWave_StartMeasure(); 													//===读取超声波的值
 		}
 		
 		Balance_Pwm = balance_UP(pitch,Mechanical_angle,gyroy);   //===直立环ID控制	
-		// Velocity_Pwm = velocity(Encoder_Left,Encoder_Right);       //===速度环PID控制	 
-  	// if(1==Flag_Left||1==Flag_Right)    
-		// Turn_Pwm =turn(Encoder_Left,Encoder_Right,gyroz);        //===转向环PID控制
-		// else Turn_Pwm=-0.5*gyroz;
+		Velocity_Pwm = velocity(Encoder_Left,Encoder_Right);       //===速度环PID控制	 
+  	if(1==Flag_Left||1==Flag_Right)
+			Turn_Pwm =turn(Encoder_Left,Encoder_Right,gyroz);        //===转向环PID控制
+		else
+			Turn_Pwm=-0.5*gyroz;
 		Moto1 = Balance_Pwm-Velocity_Pwm-Turn_Pwm;                 //===计算左轮电机最终PWM
 		Moto2 = Balance_Pwm-Velocity_Pwm+Turn_Pwm;                 //===计算右轮电机最终PWM
 	  Xianfu_Pwm();  																					 //===PWM限幅

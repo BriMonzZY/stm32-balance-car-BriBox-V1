@@ -42,7 +42,7 @@ int main(void)
 	MPU6050_EXTI_Init();					 //=====MPU6050 5ms定时中断初始化
 	// oled_first_show();					   //只需要显示一次的字符,在此刷新一次即可。
 	
-	/*      pitch = -90
+	/*      pitch = 0
 	OLED_ShowString(0,0,"Pitch:",12);
 	OLED_ShowString(0,2,"Roll :",12);
 	OLED_ShowString(0,4,"Yaw  :",12);
@@ -50,6 +50,7 @@ int main(void)
 	*/
 	
 	oled_first_show();
+	Usart_SendString( DEBUG_USARTx,"蓝牙串口初始化成功");
 	 
   while(1)	
 	{

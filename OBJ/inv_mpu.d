@@ -56,3 +56,4 @@
 ..\obj\inv_mpu.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\inv_mpu.o: ..\HARDWARE\control\control.h
 ..\obj\inv_mpu.o: ..\HARDWARE\PWM\pwm.h
+..\obj\inv_mpu.o: ..\HARDWARE\HCSR04\hcsr04_2.h

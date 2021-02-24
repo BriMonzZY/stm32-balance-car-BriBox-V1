@@ -53,5 +53,6 @@
 ..\obj\encoder.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\encoder.o: ..\HARDWARE\control\control.h
 ..\obj\encoder.o: ..\HARDWARE\PWM\pwm.h
+..\obj\encoder.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\encoder.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\encoder.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

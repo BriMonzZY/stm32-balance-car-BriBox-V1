@@ -53,5 +53,6 @@
 ..\obj\exti.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\exti.o: ..\HARDWARE\control\control.h
 ..\obj\exti.o: ..\HARDWARE\PWM\pwm.h
+..\obj\exti.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\exti.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\exti.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

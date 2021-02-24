@@ -54,5 +54,6 @@
 ..\obj\mpu6050.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\mpu6050.o: ..\HARDWARE\control\control.h
 ..\obj\mpu6050.o: ..\HARDWARE\PWM\pwm.h
+..\obj\mpu6050.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\mpu6050.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\mpu6050.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

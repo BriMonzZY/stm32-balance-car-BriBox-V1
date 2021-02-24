@@ -13,5 +13,10 @@ extern float pitch,roll,yaw;
 extern short aacx,aacy,aacz;													 //加速度传感器原始数据
 extern short gyrox,gyroy,gyroz;											 //陀螺仪原始数据
 
+extern float balance_UP_KP; 	 // 小车直立环PD参数
+extern float balance_UP_KD;
+
+extern float velocity_KP;     // 小车速度环PI参数
+extern float velocity_KI;
 
 #endif

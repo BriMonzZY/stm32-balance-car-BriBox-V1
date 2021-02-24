@@ -53,5 +53,6 @@
 ..\obj\delay.o: ..\HARDWARE\MOTOR\motor.h
 ..\obj\delay.o: ..\HARDWARE\control\control.h
 ..\obj\delay.o: ..\HARDWARE\PWM\pwm.h
+..\obj\delay.o: ..\HARDWARE\HCSR04\hcsr04_2.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h
