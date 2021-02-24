@@ -47,5 +47,8 @@
 ..\obj\delay.o: ..\HARDWARE\MPU6050\mpuiic.h
 ..\obj\delay.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
 ..\obj\delay.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
+..\obj\delay.o: ..\HARDWARE\HCSR04\hcsr04.h
+..\obj\delay.o: ..\HARDWARE\HCSR04\hc2.h
+..\obj\delay.o: ..\HARDWARE\Systick\SysTick.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

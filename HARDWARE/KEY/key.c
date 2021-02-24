@@ -13,17 +13,19 @@ void KEY_Init(void)
 入口参数：无
 返回  值：按键状态 0：无动作 1：单击 
 **************************************************************************/
+/*
 int KEY_Scan(void)
 {
-			static u8 flag_key=1;//按键按松开标志
-			if(flag_key&&KEY==0)
-			{
-				flag_key=0;
-				return 1;	// 按键按下
-			}
-			else if(1==KEY)			
-			{
-				flag_key=1;
-				return 0;//无按键按下
-			}
+	static u8 flag_key=1;//按键按松开标志
+	if(flag_key&&KEY==0)
+	{
+		flag_key=0;
+		return 1;	// 按键按下
+	}
+	else if(1==KEY)			
+	{
+		flag_key=1;
+		return 0;//无按键按下
+	}
 }
+*/

@@ -47,5 +47,8 @@
 ..\obj\led.o: ..\HARDWARE\MPU6050\mpuiic.h
 ..\obj\led.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
 ..\obj\led.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
+..\obj\led.o: ..\HARDWARE\HCSR04\hcsr04.h
+..\obj\led.o: ..\HARDWARE\HCSR04\hc2.h
+..\obj\led.o: ..\HARDWARE\Systick\SysTick.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

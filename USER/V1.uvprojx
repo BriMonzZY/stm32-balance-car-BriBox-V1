@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_ HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HARDWARE\OLED;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\MPU6050;..\HARDWARE\MPU6050\EMPL;..\HARDWARE\USART3;..\HARDWARE\TIMER</IncludePath>
+              <IncludePath>..\HARDWARE\OLED;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\KEY;..\HARDWARE\MPU6050;..\HARDWARE\MPU6050\EMPL;..\HARDWARE\USART3;..\HARDWARE\TIMER;..\HARDWARE\HCSR04;..\HARDWARE\Systick;..\HARDWARE\HCSR04</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -466,6 +466,11 @@
               <FileName>usart3.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\USART3\usart3.c</FilePath>
+            </File>
+            <File>
+              <FileName>hcsr04.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\HCSR04\hcsr04.c</FilePath>
             </File>
           </Files>
         </Group>
