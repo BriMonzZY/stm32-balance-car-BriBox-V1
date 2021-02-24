@@ -28,7 +28,8 @@ int main(void)
 	uart3_init(115200);            //=====初始化串口3
 	NVIC_Configuration();					 //=====中断优先级分组,其中包含了所有的中断优先级的配置,方便管理和一次性修改。
 	Encoder_Init_TIM2();           //=====初始化编码器2
-	TIM3_Init(1000-1,72-1);	    	 //=====定时器初始化 1ms中断一次
+	// TIM3_Init(1000-1,72-1);	    	 //=====定时器初始化 1ms中断一次
+	Timer3_Init(5000,7199);	    	 //=====超声波定时器初始化
 	Encoder_Init_TIM4();           //=====初始化编码器4
 	OLED_Init();                   //=====OLED初始化
 	OLED_Clear();									 //=====OLED清屏
@@ -40,7 +41,7 @@ int main(void)
 	delay_ms(1000);								 //=====延时1s 解决小车上电轮子乱转的问题
 	Motor_Init();									 //=====初始化与电机连接的硬件IO接口 
 	MPU6050_EXTI_Init();					 //=====MPU6050 5ms定时中断初始化
-	// oled_first_show();					   //只需要显示一次的字符,在此刷新一次即可。
+	oled_first_show();					   //只需要显示一次的字符,在此刷新一次即可。
 	
 	/*      pitch = 0
 	OLED_ShowString(0,0,"Pitch:",12);
@@ -49,7 +50,6 @@ int main(void)
 	OLED_ShowString(0,6,"Temp :",12);
 	*/
 	
-	oled_first_show();
 	Usart_SendString( DEBUG_USARTx,"蓝牙串口初始化成功");
 	 
   while(1)	

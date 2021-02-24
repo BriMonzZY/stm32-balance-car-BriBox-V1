@@ -1,5 +1,5 @@
 Dependencies for Project 'V1', Target 'V1': (DO NOT MODIFY !)
-F (.\main.c)(0x603627B5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x603641CC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x60363B90)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (D:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm3.h)(0x5B617084)
@@ -40,7 +40,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -98,7 +98,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -186,7 +186,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -241,7 +241,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -296,7 +296,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -351,7 +351,7 @@ I (..\HARDWARE\USART3\usart3.h)(0x6034C64A)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -406,7 +406,7 @@ I (..\HARDWARE\USART3\usart3.h)(0x6034C64A)
 I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -460,7 +460,7 @@ I (D:\app\keilARM\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\HARDWARE\USART3\usart3.h)(0x6034C64A)
 I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -477,8 +477,8 @@ I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
 I (..\HARDWARE\OLED\oledfont.h)(0x544D1530)
 I (..\HARDWARE\OLED\bmp.h)(0x544CF200)
-F (..\HARDWARE\TIMER\timer.c)(0x60363C5A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+F (..\HARDWARE\TIMER\timer.c)(0x6036425F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\SYSTEM\sys\sys.h)(0x60363B90)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (D:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm3.h)(0x5B617084)
@@ -575,7 +575,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu.h)(0x6035B647)
 I (..\HARDWARE\HCSR04\hcsr04.h)(0x6035CBAE)
@@ -629,7 +629,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu.h)(0x6035B647)
@@ -689,7 +689,7 @@ I (..\HARDWARE\USART3\usart3.h)(0x6034C64A)
 I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\HCSR04\hcsr04.h)(0x6035CBAE)
 I (..\HARDWARE\ENCODER\encoder.h)(0x6035C4E7)
 I (..\HARDWARE\EXTI\exti.h)(0x6035EFED)
@@ -744,7 +744,7 @@ I (..\HARDWARE\USART3\usart3.h)(0x6034C64A)
 I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\HCSR04\hcsr04.h)(0x6035CBAE)
@@ -795,7 +795,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -851,7 +851,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -906,7 +906,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -919,7 +919,7 @@ I (..\HARDWARE\PWM\pwm.h)(0x5B783F98)
 I (..\HARDWARE\HCSR04\hcsr04_2.h)(0x60363CBA)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-F (..\HARDWARE\control\control.c)(0x60363CBA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
+F (..\HARDWARE\control\control.c)(0x60363D84)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
 I (..\HARDWARE\control\control.h)(0x60361101)
 I (..\SYSTEM\sys\sys.h)(0x60363B90)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -961,7 +961,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -1016,7 +1016,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -1071,7 +1071,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)
@@ -1084,7 +1084,7 @@ I (..\HARDWARE\PWM\pwm.h)(0x5B783F98)
 I (..\HARDWARE\HCSR04\hcsr04_2.h)(0x60363CBA)
 I (D:\app\keilARM\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\app\keilARM\ARM\ARMCC\include\math.h)(0x599EDB3E)
-F (..\HARDWARE\HCSR04\hcsr04_2.c)(0x60363CBA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\hcsr04_2.o --omf_browse ..\obj\hcsr04_2.crf --depend ..\obj\hcsr04_2.d)
+F (..\HARDWARE\HCSR04\hcsr04_2.c)(0x6036437C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\OLED -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\MPU6050 -I ..\HARDWARE\MPU6050\EMPL -I ..\HARDWARE\USART3 -I ..\HARDWARE\TIMER -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\Systick -I ..\HARDWARE\HCSR04 -I ..\HARDWARE\ENCODER -I ..\HARDWARE\EXTI -I ..\HARDWARE\control -I ..\HARDWARE\PWM -I ..\HARDWARE\MOTOR-I.\RTE\_V1-ID:\app\keilARM\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\app\keilARM\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F10X_MD -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\hcsr04_2.o --omf_browse ..\obj\hcsr04_2.crf --depend ..\obj\hcsr04_2.d)
 I (..\HARDWARE\HCSR04\hcsr04_2.h)(0x60363CBA)
 I (..\SYSTEM\sys\sys.h)(0x60363B90)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -1126,7 +1126,7 @@ I (..\HARDWARE\LED\led.h)(0x6034757C)
 I (..\HARDWARE\OLED\oled.h)(0x6035FB64)
 I (D:\app\keilARM\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (..\HARDWARE\KEY\key.h)(0x60346AC1)
-I (..\HARDWARE\TIMER\timer.h)(0x6035B589)
+I (..\HARDWARE\TIMER\timer.h)(0x603641F4)
 I (..\HARDWARE\MPU6050\mpu6050.h)(0x6034A26C)
 I (..\HARDWARE\MPU6050\mpuiic.h)(0x6034A3C5)
 I (..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h)(0x50CAA81C)

@@ -1,8 +1,8 @@
 #include "hcsr04_2.h"
 
 
-#define	TRIG_PIN       GPIO_Pin_2   //TRIG       
-#define	ECHO_PIN       GPIO_Pin_3		//ECHO   
+#define	TRIG_PIN       GPIO_Pin_3   //TRIG       
+#define	ECHO_PIN       GPIO_Pin_2		//ECHO   
 
 /*
  * 函数名：UltrasonicWave_Configuration
@@ -16,19 +16,19 @@ void Hcsr04Init(void)
 	EXTI_InitTypeDef EXTI_InitStructure;
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_AFIO, ENABLE);
     
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;					 //PA2接TRIG
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;					 //PA3接TRIG
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;		     //设为推挽输出模式
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;	         
   GPIO_Init(GPIOA, &GPIO_InitStructure);	                 //初始化外设GPIO 
 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;				     //PA3接ECH0
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;				     //PA3接ECH0
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;		 //设为输入
-  GPIO_Init(GPIOA, &GPIO_InitStructure);						 //初始化GPIOA
+  GPIO_Init(GPIOA,&GPIO_InitStructure);						 //初始化GPIOA
 	
 	 //GPIOA.2	  中断线以及中断初始化配置
- 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource2);
+ 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA,GPIO_PinSource2);
 
- 	EXTI_InitStructure.EXTI_Line = EXTI_Line2;
+ 	EXTI_InitStructure.EXTI_Line=EXTI_Line2;
   EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;	
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;

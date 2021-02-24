@@ -6,7 +6,7 @@
 
 ## 引脚功能：
 
-超声波模块：**PA2**：trig		**PA3**：echo
+超声波模块：**PA3**：trig		**PA2**：echo
 
 OLED模块：**PA4**：SCL		**PA5**：SDA
 
