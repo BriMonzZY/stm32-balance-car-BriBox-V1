@@ -14,6 +14,7 @@
 #define ECHO_Reci  PAin(3)
 
 extern u16 msHcCount;
+extern int	  Encoder_Left,Encoder_Right;
 
 float Hcsr04GetLength(void);
 void Hcsr04Init(void);

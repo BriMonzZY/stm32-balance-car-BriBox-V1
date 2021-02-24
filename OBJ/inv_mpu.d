@@ -51,5 +51,4 @@
 ..\obj\inv_mpu.o: ..\HARDWARE\MPU6050\mpu6050.h
 ..\obj\inv_mpu.o: ..\HARDWARE\MPU6050\mpuiic.h
 ..\obj\inv_mpu.o: ..\HARDWARE\HCSR04\hcsr04.h
-..\obj\inv_mpu.o: ..\HARDWARE\HCSR04\hc2.h
-..\obj\inv_mpu.o: ..\HARDWARE\Systick\SysTick.h
+..\obj\inv_mpu.o: ..\HARDWARE\ENCODER\encoder.h

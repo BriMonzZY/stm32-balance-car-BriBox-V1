@@ -2,6 +2,8 @@
 
 uint16_t msHcCount = 0;//ms计数
 
+u16 flag10ms = 0;  // 用于时间片轮询
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ** 函数名称: Delay_Ms_Ms
 ** 功能描述: 延时1MS (可通过仿真来判断他的准确度)            
@@ -46,7 +48,7 @@ void Hcsr04Init(void)
 }
 
 //////////////////////////////
-//定时器中断服务函数
+//定时器中断服务函数   1ms
 //////////////////////////////
 
 void TIM3_IRQHandler(void)   //TIM3中断
@@ -55,6 +57,14 @@ void TIM3_IRQHandler(void)   //TIM3中断
 	{
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);  //清除TIMx的中断待处理位:TIM 中断源.
 		msHcCount++;
+		
+		flag10ms++;
+		if(flag10ms == 10) {  // 10ms
+			flag10ms = 0;
+			Encoder_Right = -Read_Encoder(2); 
+			Encoder_Left  = Read_Encoder(4);
+		}
+		
 	}
 }
 

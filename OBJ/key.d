@@ -48,7 +48,6 @@
 ..\obj\key.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
 ..\obj\key.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\key.o: ..\HARDWARE\HCSR04\hcsr04.h
-..\obj\key.o: ..\HARDWARE\HCSR04\hc2.h
-..\obj\key.o: ..\HARDWARE\Systick\SysTick.h
+..\obj\key.o: ..\HARDWARE\ENCODER\encoder.h
 ..\obj\key.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\key.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

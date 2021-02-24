@@ -30,17 +30,6 @@ void TIM3_Init(u16 arr,u16 psc)
 }
 
 /***************************************************
-*TIM3定时器中断服务函数
+*TIM3定时器中断服务函数位于hcsr04.c
 ***************************************************/
-
-/*hcsr04.c
-void TIM3_IRQHandler(void)   //TIM3中断
-{
-	if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
-	{
-		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);  //清除TIMx的中断待处理位:TIM 中断源.
-		msHcCount++;
-	}
-}
-*/
 

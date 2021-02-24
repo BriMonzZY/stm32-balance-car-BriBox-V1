@@ -49,7 +49,6 @@
 ..\obj\mpu6050.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu_dmp_motion_driver.h
 ..\obj\mpu6050.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\mpu6050.o: ..\HARDWARE\HCSR04\hcsr04.h
-..\obj\mpu6050.o: ..\HARDWARE\HCSR04\hc2.h
-..\obj\mpu6050.o: ..\HARDWARE\Systick\SysTick.h
+..\obj\mpu6050.o: ..\HARDWARE\ENCODER\encoder.h
 ..\obj\mpu6050.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\mpu6050.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

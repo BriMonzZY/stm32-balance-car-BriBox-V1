@@ -25,13 +25,14 @@ void OLED_ShowString(u8 x,u8 y, u8 *p,u8 Char_Size);
 #define	Brightness	0xFF 
 #define X_WIDTH 	128
 #define Y_WIDTH 	64	    						  
-//-----------------OLED IIC端口定义----------------  					   
+//-----------------OLED IIC端口定义----------------  			
+// **PA4**：SCL		**PA5**：SDA
 
-#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOB,GPIO_Pin_8)//SCL
-#define OLED_SCLK_Set() GPIO_SetBits(GPIOB,GPIO_Pin_8)
+#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_4)//SCL
+#define OLED_SCLK_Set() GPIO_SetBits(GPIOA,GPIO_Pin_4)
 
-#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOB,GPIO_Pin_9)//SDA
-#define OLED_SDIN_Set() GPIO_SetBits(GPIOB,GPIO_Pin_9)
+#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_5)//SDA
+#define OLED_SDIN_Set() GPIO_SetBits(GPIOA,GPIO_Pin_5)
 
  		     
 #define OLED_CMD  0	//写命令

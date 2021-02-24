@@ -8,7 +8,7 @@
 
 超声波模块：**PA2**：trig		**PA3**：echo
 
-OLED模块：**PB8**：SCL		**PB9**：SDA
+OLED模块：**PA4**：SCL		**PA5**：SDA
 
 蓝牙串口uart3：**PB10**：TXD		**PB11**：RXD
 
@@ -20,9 +20,9 @@ OLED模块：**PB8**：SCL		**PB9**：SDA
 
 电机测速：
 
-**PB6**		**PB7**
+**PB6**：A		**PB7**：B
 
-**PA0**		**PA1**
+**PA0**：A		**PA1**：B
 
 
 

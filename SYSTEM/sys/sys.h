@@ -14,8 +14,7 @@
 #include "inv_mpu_dmp_motion_driver.h"
 #include "inv_mpu.h"
 #include "hcsr04.h"
-#include "hc2.h"
-#include "SysTick.h"
+#include "encoder.h"
 ////////////////////////////////////////////////////////////////////////////
 #include <string.h> 
 #include <stdio.h>

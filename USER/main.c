@@ -8,8 +8,7 @@ short gyrox,gyroy,gyroz;											 //陀螺仪原始数据
 float temp; 								  								 //温度
 u8		recieve_bluetooth_DATA=0;								 //	蓝牙接受数据标志
 float recive_distance = 0;
-volatile uint32_t count,Distance0,Distance1;
-
+int	  Encoder_Left,Encoder_Right;
 ////////////////////////////////////////////////////////////////////////////
 
 
@@ -28,6 +27,8 @@ int main(void)
 	mpu_dmp_init();								 //=====初始化MPU6050的DMP模式	
 	uart3_init(115200);						 //=====串口3初始化即蓝牙初始化  115200
 	Hcsr04Init();									 //=====超声波测距初始化
+	Encoder_Init_TIM2();					 //=====编码器2初始化
+	Encoder_Init_TIM4();					 //=====编码器4初始化
 	delay_ms(100);
 	
 
@@ -99,14 +100,20 @@ int main(void)
 		OLED_Num2(12,4,recieve_bluetooth_DATA);
 		*/
 		
-		
-		/*要将测距放入定时器中断中
+		/*
+		// 要将测距放入定时器中断中
 		// OLED_ShowString(0, 2, "HCSR04_Test", 12);
 		recive_distance = Hcsr04GetLength();
 		OLED_Float(4, 0, recive_distance, 3);
 		*/
 		
-		
+		delay_ms(50);
+		OLED_ShowString(0,0,"DAYUTC--OLED",12);
+		OLED_ShowString(0,4,"L: ",12);
+		OLED_ShowString(60,4,"R: ",12);
+		OLED_Num2(4,4,Encoder_Left);					//显示右边电机的编码器值
+		OLED_Num2(14,4,Encoder_Right);				//显示左边电机的编码器值
+		LED=~LED;	
 	} 	
 }
 
