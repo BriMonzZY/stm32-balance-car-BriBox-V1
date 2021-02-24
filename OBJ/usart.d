@@ -49,5 +49,9 @@
 ..\obj\usart.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\usart.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\usart.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\usart.o: ..\HARDWARE\EXTI\exti.h
+..\obj\usart.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\usart.o: ..\HARDWARE\control\control.h
+..\obj\usart.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\usart.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\usart.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

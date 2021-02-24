@@ -53,3 +53,7 @@
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\MPU6050\mpuiic.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\EXTI\exti.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\control\control.h
+..\obj\inv_mpu_dmp_motion_driver.o: ..\HARDWARE\PWM\pwm.h

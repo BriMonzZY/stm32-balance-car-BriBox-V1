@@ -14,7 +14,11 @@ OLED模块：**PA4**：SCL		**PA5**：SDA
 
 电机驱动：
 
+**PA8**：PWMA		**PA11**：PWMB
 
+**PB12**：AIN2		**PB13**：AIN1
+
+**PB14**：BIN1		**PB15**：BIN2
 
 
 
@@ -26,4 +30,4 @@ OLED模块：**PA4**：SCL		**PA5**：SDA
 
 
 
-MPU6050：**PB4**：SCL		**PB3**：SDA
+MPU6050：**PB4**：SCL		**PB3**：SDA		**PB5**：INT

@@ -50,5 +50,9 @@
 ..\obj\stm32f10x_it.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\EXTI\exti.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\control\control.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

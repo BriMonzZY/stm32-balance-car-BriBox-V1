@@ -15,6 +15,10 @@
 #include "inv_mpu.h"
 #include "hcsr04.h"
 #include "encoder.h"
+#include "exti.h"
+#include "motor.h"
+#include "control.h"
+#include "pwm.h"
 ////////////////////////////////////////////////////////////////////////////
 #include <string.h> 
 #include <stdio.h>
@@ -87,8 +91,19 @@
 #define SWD_ENABLE         0X01
 #define JTAG_SWD_ENABLE    0X00	
 
-extern u8 recieve_bluetooth_DATA;			 //	蓝牙接受数据标志
-
+extern float Voltage;  													//电池电压采样相关的变量
+extern float pitch,roll,yaw; 										//欧拉角
+extern short aacx,aacy,aacz;										//加速度传感器原始数据
+extern short gyrox,gyroy,gyroz;									//陀螺仪原始数据
+extern float UltrasonicWave_Distance;      			//超声波测距
+extern int   Encoder_Left,Encoder_Right;        //左右编码器的脉冲计数
+extern int 	 Moto1,Moto2;										    //计算出来的最终赋给电机的PWM
+extern int 	 Flag_Qian,Flag_Hou,Flag_Left,Flag_Right; //蓝牙遥控相关的变量
+extern u8 flag_UltrasonicWave;
 void NVIC_Configuration(void);//中断优先级设置	 
+
+extern float temp; 								  								 //温度
+extern u8		recieve_bluetooth_DATA;								 //	蓝牙接受数据标志
+extern float recive_distance;
 
 #endif

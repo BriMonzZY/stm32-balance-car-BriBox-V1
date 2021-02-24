@@ -58,12 +58,14 @@ void TIM3_IRQHandler(void)   //TIM3中断
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update);  //清除TIMx的中断待处理位:TIM 中断源.
 		msHcCount++;
 		
+		/*
 		flag10ms++;
 		if(flag10ms == 10) {  // 10ms
 			flag10ms = 0;
-			Encoder_Right = -Read_Encoder(2); 
-			Encoder_Left  = Read_Encoder(4);
+			Encoder_Left = -Read_Encoder(2); 
+			Encoder_Right  = Read_Encoder(4);
 		}
+		*/
 		
 	}
 }

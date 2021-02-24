@@ -72,6 +72,9 @@ void OLED_Num4(unsigned char x,unsigned char y, int number);
 void OLED_Num5(unsigned char x,unsigned char y,unsigned int number);
 
 	
+void oled_show(void);
+void oled_first_show(void);
+	
 #endif  
 	 
 

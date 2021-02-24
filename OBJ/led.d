@@ -49,5 +49,9 @@
 ..\obj\led.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\led.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\led.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\led.o: ..\HARDWARE\EXTI\exti.h
+..\obj\led.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\led.o: ..\HARDWARE\control\control.h
+..\obj\led.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\led.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

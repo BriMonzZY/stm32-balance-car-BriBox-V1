@@ -49,5 +49,9 @@
 ..\obj\delay.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\delay.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\delay.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\delay.o: ..\HARDWARE\EXTI\exti.h
+..\obj\delay.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\delay.o: ..\HARDWARE\control\control.h
+..\obj\delay.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\delay.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

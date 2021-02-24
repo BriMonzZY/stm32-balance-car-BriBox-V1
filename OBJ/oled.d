@@ -48,6 +48,10 @@
 ..\obj\oled.o: ..\HARDWARE\MPU6050\EMPL\inv_mpu.h
 ..\obj\oled.o: ..\HARDWARE\HCSR04\hcsr04.h
 ..\obj\oled.o: ..\HARDWARE\ENCODER\encoder.h
+..\obj\oled.o: ..\HARDWARE\EXTI\exti.h
+..\obj\oled.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\oled.o: ..\HARDWARE\control\control.h
+..\obj\oled.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\oled.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\oled.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\oled.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h
