@@ -2,6 +2,40 @@
 
 uint16_t uart_receive;//蓝牙接收相关变量
 
+
+// 十六进制转10进制
+#define N 100
+int i3;
+/*
+int main(){
+	int htoi(char []);
+	char a[N];
+	gets(a);
+	if(htoi(a))
+		printf("%d\n",htoi(a));
+	return 0;
+}
+*/
+
+/*
+int htoi(char a[]){
+	int len,t,sum=0;
+	len=strlen(a);
+	for(i3=0;i3<len;i3++){
+		if(a[i3]>='0'&&a[i3]<='9'||a[i3]>='a'&&a[i3]<='f'||a[i3]>='A'&&a[i3]<='F'){
+			if(a[i3]>='0'&&a[i3]<='9')
+				t=a[i3]-'0';
+			else if(a[i3]>='a'&&a[i3]<='f')
+				t=a[i3]-'a'+10;//十六进制a转化为十进制是10,以此类推到f
+			else
+				t=a[i3]-'A'+10;
+			sum=sum*16+t;
+		}
+	}
+	return sum;
+}
+*/
+
 /**************************************************************************
 函数功能：串口3初始化
 入口参数： bound:波特率
@@ -63,7 +97,7 @@ void USART3_IRQHandler(void)
 {	
 	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET) //接收到数据
 	{	  
-		static	uint16_t uart_receive = 0;//蓝牙接收相关变量
+		static	uint16_t uart_receive = 0;
 		
 		uart_receive = USART_ReceiveData(USART3); 
 		if     (uart_receive==0x00)			balance_UP_KP += 0.1;
@@ -75,8 +109,6 @@ void USART3_IRQHandler(void)
 		else if(uart_receive==0x06)	  	recieve_bluetooth_DATA=6;
 		else if(uart_receive==0x07)			recieve_bluetooth_DATA=7;
 		else if(uart_receive==0x08)	  	recieve_bluetooth_DATA=8;
-		
-		USART_SendData(USART3, recieve_bluetooth_DATA);
 	}  											 
 } 
 
