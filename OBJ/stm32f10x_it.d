@@ -41,7 +41,6 @@
 ..\obj\stm32f10x_it.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\LED\led.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\OLED\oled.h
-..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\KEY\key.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\MPU6050\mpu6050.h
@@ -55,5 +54,7 @@
 ..\obj\stm32f10x_it.o: ..\HARDWARE\control\control.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\HCSR04\hcsr04_2.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\OLED\oled_spi.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
+..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\stm32f10x_it.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h

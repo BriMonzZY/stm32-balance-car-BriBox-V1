@@ -20,6 +20,7 @@
 #include "control.h"
 #include "pwm.h"
 #include "hcsr04_2.h"
+#include "oled_spi.h"
 ////////////////////////////////////////////////////////////////////////////
 #include <string.h> 
 #include <stdio.h>
@@ -106,5 +107,6 @@ void NVIC_Configuration(void);//中断优先级设置
 extern float temp; 								  								 //温度
 extern u8		recieve_bluetooth_DATA;								 //	蓝牙接受数据标志
 extern float recive_distance;
+
 
 #endif

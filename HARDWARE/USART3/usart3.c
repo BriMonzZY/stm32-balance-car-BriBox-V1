@@ -4,8 +4,8 @@ uint16_t uart_receive;//蓝牙接收相关变量
 
 
 // 十六进制转10进制
-#define N 100
-int i3;
+//#define N 100
+//int i3;
 /*
 int main(){
 	int htoi(char []);
@@ -100,15 +100,25 @@ void USART3_IRQHandler(void)
 		static	uint16_t uart_receive = 0;
 		
 		uart_receive = USART_ReceiveData(USART3); 
-		if     (uart_receive==0x00)			balance_UP_KP += 0.1;
-		else if(uart_receive==0x01)			balance_UP_KD += 0.1;
-		else if(uart_receive==0x02)			recieve_bluetooth_DATA=2;
-		else if(uart_receive==0x03)			balance_UP_KP -= 0.1;
-		else if(uart_receive==0x04)			balance_UP_KD -= 0.1;
-		else if(uart_receive==0x05)			recieve_bluetooth_DATA=5;										
-		else if(uart_receive==0x06)	  	recieve_bluetooth_DATA=6;
-		else if(uart_receive==0x07)			recieve_bluetooth_DATA=7;
-		else if(uart_receive==0x08)	  	recieve_bluetooth_DATA=8;
+		if     (uart_receive==0x00)			Velocity_Kp += 0.1;
+		else if(uart_receive==0x01)			Velocity_Kp -= 0.1;
+		else if(uart_receive==0x02)			balance_UP_KP += 1;
+		else if(uart_receive==0x03)			Mechanical_angle += 0.1;
+		else if(uart_receive==0x04)			{Flag_Qian = 1; Flag_Hou = 0;}   // 向前走
+		else if(uart_receive==0x14)			Flag_Qian = 0;  // 停止向前走
+		else if(uart_receive==0x05)			balance_UP_KP -= 1;										
+		else if(uart_receive==0x06)	  	{Flag_Left = 1; Flag_Right = 0;}  // 向左
+		else if(uart_receive==0x16)	  	Flag_Left = 0;  // 停止向左
+		else if(uart_receive==0x07)			Mechanical_angle -= 0.1;
+		else if(uart_receive==0x08)	  	{Flag_Right = 1; Flag_Left = 0;}  //向右
+		else if(uart_receive==0x18)	  	Flag_Right = 0;  //停止向右
+		else if(uart_receive==0x10)	  	balance_UP_KD += 0.1;
+		else if(uart_receive==0x11)	  	{Flag_Hou = 1; Flag_Qian = 0;}  // 向后走
+		else if(uart_receive==0x21)	  	Flag_Hou = 0;  // 停止向后走
+		else if(uart_receive==0x12)	  	balance_UP_KD -= 0.1;
+		
+		else if(uart_receive==0x50)	  	Performance = 0;  // 性能模式关闭
+		else if(uart_receive==0x51)	  	Performance = 1;  // 性能模式打开
 	}  											 
 } 
 

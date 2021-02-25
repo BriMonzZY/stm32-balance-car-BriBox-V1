@@ -39,7 +39,6 @@
 ..\obj\main.o: ..\HARDWARE\USART3\usart3.h
 ..\obj\main.o: ..\HARDWARE\LED\led.h
 ..\obj\main.o: ..\HARDWARE\OLED\oled.h
-..\obj\main.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\main.o: ..\HARDWARE\KEY\key.h
 ..\obj\main.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\main.o: ..\HARDWARE\MPU6050\mpu6050.h
@@ -53,5 +52,8 @@
 ..\obj\main.o: ..\HARDWARE\control\control.h
 ..\obj\main.o: ..\HARDWARE\PWM\pwm.h
 ..\obj\main.o: ..\HARDWARE\HCSR04\hcsr04_2.h
+..\obj\main.o: ..\HARDWARE\OLED\oled_spi.h
 ..\obj\main.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\string.h
+..\obj\main.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\main.o: D:\app\keilARM\ARM\ARMCC\Bin\..\include\math.h
+..\obj\main.o: ..\HARDWARE\OLED\bmp.h

@@ -15,7 +15,8 @@ void OLED_ShowString(u8 x,u8 y, u8 *p,u8 Char_Size);
 */
 
 #include "sys.h"
-#include "stdlib.h"	    	
+
+
 #define OLED_MODE 0
 #define SIZE 8
 #define XLevelL		0x00

@@ -1,5 +1,5 @@
 #include "sys.h"
-
+#include "bmp.h"
 
 //////////////////////////全局变量的定义////////////////////////////////////  
 float temp; 								  								 //温度
@@ -20,6 +20,7 @@ u8    key=0;								 									 //按键的键值
 
 int main(void)	
 { 	
+	//////////////////////////进行初始化//////////////////////////////////// 
 	LED_Init();                    //=====初始化与 LED 连接的IO
 	KEY_Init();                    //=====初始化与按键连接的IO
 	delay_init();	    	           //=====延时函数初始化	
@@ -41,16 +42,12 @@ int main(void)
 	delay_ms(1000);								 //=====延时1s 解决小车上电轮子乱转的问题
 	Motor_Init();									 //=====初始化与电机连接的硬件IO接口 
 	MPU6050_EXTI_Init();					 //=====MPU6050 5ms定时中断初始化
+	OLED_SPI_Init();
+	////////////////////////////////////////////////////////////////////////////
+	
 	oled_first_show();					   //只需要显示一次的字符,在此刷新一次即可。
-	
-	/*      pitch = 0
-	OLED_ShowString(0,0,"Pitch:",12);
-	OLED_ShowString(0,2,"Roll :",12);
-	OLED_ShowString(0,4,"Yaw  :",12);
-	OLED_ShowString(0,6,"Temp :",12);
-	*/
-	
 	Usart_SendString( DEBUG_USARTx,"蓝牙串口初始化成功");
+	OLED_ShowString_spi(0,3,"1.3' OLED TEST");
 	 
   while(1)	
 	{
