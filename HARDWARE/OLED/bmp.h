@@ -11,7 +11,9 @@
 #include "sys.h"
 extern unsigned char BMP1[];
 
-extern unsigned char BMP2[];
+extern unsigned char fall_down[];
+	
+
 #endif
 
 
