@@ -80,3 +80,11 @@ Moto2 = Balance_Pwm-balance_UP_KP*Velocity_Pwm+Turn_Pwm;    //=计算右轮电�
 > float Velocity_Ki = VKP * 0.005;// ki = (1/200)kp
 
 时，小车已经基本平稳，但还是在中心位置前后1cm晃动，初步猜测应该是重心没有调整好
+
+
+
+> 移植OLED——SPI的时候出现bmp.h和oledfont.h的重复定义，创建c文件，extern其中的数组即可。
+
+
+
+目前版本的缺陷：

@@ -560,16 +560,16 @@ void oled_show(void)
 		else	
 		{
 			OLED_ShowString(48,0,"+",12); 
-			OLED_Float(0,56,pitch,2);			
+			OLED_Float(0,56,pitch,3);			
 		}
 		OLED_Num2(4,6, Encoder_Right);					//显示右边电机的编码器值
 		OLED_Num2(14,6, Encoder_Left);					//显示左边电机的编码器值
 		OLED_Float(4,70, UltrasonicWave_Distance, 3);						//显示超声波的距离
 		
-		OLED_Float(2, 30, balance_UP_KP, 1);
-		OLED_Float(2, 0, balance_UP_KD, 1);
-		OLED_Float(2, 80, Velocity_Kp, 2);
+		// OLED_Float(2, 30, balance_UP_KP, 1);
+		// OLED_Float(2, 0, balance_UP_KD, 1);
+		// OLED_Float(2, 80, Velocity_Kp, 2);
 		
-		OLED_Float(0,90,Mechanical_angle,1);
+		// OLED_Float(0,90,Mechanical_angle,1);
 }
 

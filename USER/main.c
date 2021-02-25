@@ -47,7 +47,8 @@ int main(void)
 	
 	oled_first_show();					   //只需要显示一次的字符,在此刷新一次即可。
 	Usart_SendString( DEBUG_USARTx,"蓝牙串口初始化成功");
-	OLED_ShowString_spi(0,3,"1.3' OLED TEST");
+	OLED_ShowString_spi(10,3,"Hello BriBox");
+	// OLED_DrawBMP_spi(0,0,128,8,BMP2);
 	 
   while(1)	
 	{

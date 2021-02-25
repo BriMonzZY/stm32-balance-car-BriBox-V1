@@ -7,6 +7,7 @@ void EXTI9_5_IRQHandler(void);
 int balance_UP(float Angle,float Mechanical_balance,float Gyro);
 int velocity(int encoder_left,int encoder_right);
 int turn(int encoder_left,int encoder_right,float gyro);
+void Obstacle_avoidance(void);
 
 extern float recive_distance;
 extern float pitch,roll,yaw;

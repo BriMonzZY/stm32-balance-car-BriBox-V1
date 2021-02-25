@@ -9,6 +9,8 @@
 **************************************************************************/
 int Balance_Pwm,Velocity_Pwm,Turn_Pwm;
 uint8_t Performance = 0;  // 性能模式标志位
+u8 bizhang_flag = 0;  // 避障标志位
+u8 count3s = 0;
 
 
 float Mechanical_angle = -0.3;   //0
@@ -36,12 +38,20 @@ void EXTI9_5_IRQHandler(void)
 		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);								 //===得到陀螺仪数据
 		Encoder_Left = -Read_Encoder(2);                           //===读取编码器的值，因为两个电机的旋转了180度的，所以对其中一个取反，保证输出极性一致
 		Encoder_Right = Read_Encoder(4);                           //===读取编码器的值
+		
+		
 		UltrasonicWave_Voltage_Counter++;
 		if(UltrasonicWave_Voltage_Counter==10)									 //===100ms读取一次超声波的数据以及电压
 		{
 			UltrasonicWave_Voltage_Counter=0;
 			UltrasonicWave_StartMeasure();												 //===读取超声波的值
+			if(UltrasonicWave_Distance < 20 && UltrasonicWave_Distance > 4) {  // 触发避障程序
+				bizhang_flag = 1;
+			}
+			else bizhang_flag = 0;
 		}
+		
+		
 		Balance_Pwm =balance_UP(pitch,Mechanical_angle,gyroy);   //===直立环PID控制	
 		Velocity_Pwm = velocity(Encoder_Left,Encoder_Right);       //===速度环PID控制	 
   	
@@ -86,29 +96,28 @@ int velocity(int encoder_left,int encoder_right)
     static float Velocity,Encoder_Least,Encoder,Movement;
 	  static float Encoder_Integral;
 	
-		if(Flag_Qian == 1)				
+		if(Flag_Qian == 1 && bizhang_flag == 0)				
 		{
 			if (Performance == 1) Movement = -150;
 			else Movement = -50;
 		}
-    else if(Flag_Hou == 1)//接收到蓝牙APP遥控数据		
+    else if(Flag_Hou == 1 && bizhang_flag == 0)//接收到蓝牙APP遥控数据		
 		{
 			if (Performance == 1) Movement = 150;
 			else Movement = 50;//设定速度
 		}
 	
-		//当超声波的距离低于10cm时,即10cm处存在障碍物,将超声波标志位置并且赋积分值使其后退,这里做了个简单的P比例计算
-		else if(UltrasonicWave_Distance<10&&UltrasonicWave_Distance>3)
-		{
-			flag_UltrasonicWave=1;
-			Movement=UltrasonicWave_Distance*50;		
-		}
-		
 		else//没有接受到任何的数据
 		{	
-			flag_UltrasonicWave=0;
 			Movement=0;
 		}
+		
+		//当超声波的距离低于10cm时,即10cm处存在障碍物,将超声波标志位置并且赋积分值使其后退,这里做了个简单的P比例计算
+		if(bizhang_flag == 1)
+		{
+			Movement = UltrasonicWave_Distance * 10;		
+		}
+		
    // 速度PI控制器
 		Encoder_Least =(Encoder_Left +  Encoder_Right)-0;                    //获取最新速度偏差==测量速度（左右编码器之和）-目标速度（此处为零） 
 		Encoder *= 0.8;		                                                //一阶低通滤波器       
@@ -156,7 +165,7 @@ int turn(int encoder_left,int encoder_right,float gyro)//转向控制
 	 float Turn_Amplitude = 50,Kp=20,Kd=0;     
 	  //=============遥控左右旋转部分=======================//
 	  //这一部分主要是根据旋转前的速度调整速度的起始速度，增加小车的适应性
-  	if(1==Flag_Left||1==Flag_Right)                      
+  	if((1==Flag_Left||1==Flag_Right) && bizhang_flag == 0)
 		{
 			if(++Turn_Count==1)
 			Encoder_temp=myabs(encoder_left+encoder_right);      
@@ -180,4 +189,22 @@ int turn(int encoder_left,int encoder_right,float gyro)//转向控制
   	//=============转向PD控制器=======================//
 		Turn=-Turn_Target*Kp-gyro*Kd;                 //===结合Z轴陀螺仪进行PD控制
 	  return Turn;
+}
+
+
+
+
+
+
+
+void Obstacle_avoidance(void)
+{
+	Flag_Qian = 0;
+	Flag_Hou = 1;
+	Flag_Left = 0;
+	Flag_Right = 0;
+	delay_ms(1000);
+	Flag_Left = 1;
+	delay_ms(3000);
+	Flag_Left = 1;
 }
